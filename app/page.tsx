@@ -121,6 +121,11 @@ export default function Home() {
           Go to Button Page
         </Link>
       </div>
+      <div className="mt-8">
+        <Link href="/info" className="text-xl text-blue-500 hover:underline">
+          Go to Info Page
+        </Link>
+      </div>
     </main>
   );
 }
