@@ -1,4 +1,6 @@
+// page.tsx
 import Image from "next/image";
+import ItemList from "../components/ItemsList"; // Import the new component
 
 export default function Home() {
   return (
@@ -38,6 +40,9 @@ export default function Home() {
           priority
         />
       </div>
+
+      {/* Add the ItemList component here */}
+      <ItemList />
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
