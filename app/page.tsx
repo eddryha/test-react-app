@@ -1,5 +1,6 @@
 // page.tsx
 import Image from "next/image";
+import Link from "next/link"; // Import Link component from Next.js
 import ItemList from "../components/ItemsList"; // Import the new component
 
 export default function Home() {
@@ -112,6 +113,13 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+      </div>
+      
+      {/* Add a link to the new button page */}
+      <div className="mt-8">
+        <Link href="/buttonPage" className="text-xl text-blue-500 hover:underline">
+          Go to Button Page
+        </Link>
       </div>
     </main>
   );
